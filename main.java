@@ -23,11 +23,11 @@ public class main {
         if (!number.matches(numReg)) {
             System.out.println("Invalid Number");
         }
-        String passwordReg = "^(?=.*[A-Z]).{8,}$";
+        String passwordReg = "^(?=.*[A-Z])(?=.*\\d).{8,}$";
         String password = sc.next();
         if (!password.matches(passwordReg)) {
             System.out.println("Invalid Password");
         }
-        
+
     }
 }
